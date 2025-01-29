@@ -16,7 +16,7 @@ rustdoc-args = ["--cfg", "doc_cfg"]
 [dependencies]
 lazy_static = "1.4"
 libc = { version = "0.2", default-features = false }
-libsodium-sys-stable = "1.22"
+libsodium-sys-stable = { git = "https://github.com/ddorian1/libsodium-sys-stable.git" }
 rand_core = { version = "0.6" }
 serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
 serde-big-array = { version = "0.5", optional = true }
